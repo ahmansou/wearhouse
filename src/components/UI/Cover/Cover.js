@@ -15,10 +15,10 @@ class Cover extends Component {
 			{image: cover2},
 			{image: cover3}
 		],
-		currentImage: 1,
+		currentImage: 0,
 		coverTitleText: [
 			{text: 'Keep walking\ninto the right direction', altern: 'YOUR LIFESTYLE PULLS THE TRIGGER', button:'Get Going now'},
-			{text: 'N. 1\ne-commerce', altern: 'Best Products\nBest Shipping\nBest Costumer Care', button:'Start Shopping Now'},
+			{text: 'N. 1\n e-commerce', altern: 'Best Products\nBest Shipping\nBest Costumer Care', button:'Start Shopping Now'},
 			{text: 'The Greatest\nSummer Mix', altern: 'Jeans Shorts\nShirts\nSandals', button:'Buy Nows'},
 		]
 	}
@@ -43,7 +43,7 @@ class Cover extends Component {
 				updatedImage = this.state.currentImage + 1;
 			}
 		}
-		console.log(updatedImage);
+		// console.log(updatedImage);
 		this.setState({currentImage: updatedImage})
 	}
 	

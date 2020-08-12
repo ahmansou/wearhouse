@@ -4,7 +4,15 @@
 	overflow: hidden;
 	transition: background .5s ease-in;
 	display: flex;
+	font-size-adjust: 100%;
 	justify-content: space-between;
 	background-size: cover;
-    background-position: center top;
+}
+
+@media (max-width: 800px) {
+	.Cover {
+		height: 300px;
+		padding-bottom: 40px;
+	}
+
 }

@@ -1,0 +1,35 @@
+.SmallHeader {
+	height: 80px;
+	width: 100%;
+	justify-content: space-between;
+	display: none;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.SmallHeader .RowLogo {
+	/* background-color: salmon; */
+	display: flex;
+	margin: auto;
+	margin: 0;
+	padding: 0 20px;
+}
+
+.SmallHeader .RowCart {
+	/* background-color: blue; */
+	display: flex;
+	/* margin: auto; */
+	margin: 0;
+	padding: 0 20px;
+}
+
+.SmallHeader .RowCart:hover{
+	cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+	.SmallHeader {
+		display: flex;
+	}
+}

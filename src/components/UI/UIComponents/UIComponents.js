@@ -3,6 +3,7 @@ import classes from './UIComponents.module.css';
 import SearchIcon from '../../../assets/search.svg';
 import ProfileIcon from '../../../assets/profile.svg';
 import CartIcon from '../../../assets/cart.svg';
+import OpenMenuIcon from '../../../assets/openMenu.svg';
 import rightArrow from '../../../assets/rightArrow.svg';
 import leftArrow from '../../../assets/leftArrow.svg';
 
@@ -24,6 +25,10 @@ export const Profile = () => (
 
 export const Cart = () => (
 	<img className={classes.Cart} src={CartIcon} alt='' />
+)
+
+export const OpenMenu = () => (
+	<img className={classes.OpenMenu} src={OpenMenuIcon} alt='' />
 )
 
 export const RightArrow = (props) => (

@@ -1,0 +1,31 @@
+.ProductCard {
+	/* width: 250px; */
+	width: 31.5%;
+	min-width: 200px;
+	/* height: 400px; */
+	/* background-color: red; */
+	display: block;
+	text-align: center;
+	padding-bottom: 20px;
+	margin: 5px;
+	margin-bottom: 20px;
+	transition: .2s ease-in-out;
+}
+
+.ProductCard:hover {
+	box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 900px) {
+	.ProductCard {
+		width: 47%;
+	}
+}
+
+.ProductCard img {
+	width: 100%;
+}
+
+.ProductCard .Price {
+	color: hsla(0, 100%, 70%, 1);
+}

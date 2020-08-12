@@ -3,6 +3,7 @@ import Aux from '../../hoc/Aux';
 import classes from './Layout.module.css';
 import TopBar from '../UI/TopBar/TopBar';
 import Header from '../UI/Header/Header';
+import SmallHeader from '../UI/SmallHeader/SmallHeader';
 
 class Layout extends Component {
 	render() {
@@ -10,6 +11,7 @@ class Layout extends Component {
 			<Aux>
 				<TopBar />
 				<Header />
+				<SmallHeader />
 				<main className={classes.Content} >
 					{this.props.children}
 				</main>

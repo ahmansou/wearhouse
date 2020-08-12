@@ -24,6 +24,7 @@
 	width: 100%;
 	letter-spacing: -5px;
 	white-space: initial;
+	margin: 0;
 }
 
 .CoverTitleLeft .CoverTitleAltern {
@@ -31,3 +32,12 @@
 	font-weight: 200;	;
 	letter-spacing: 15px;
 }
+
+@media (max-width: 800px) {
+	.CoverTitleLeft .Text {
+		font-size: 50px;
+	}
+	.CoverTitleLeft .CoverTitleAltern {
+		font-size: 15px;
+	}
+}	

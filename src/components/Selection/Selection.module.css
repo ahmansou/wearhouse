@@ -1,0 +1,38 @@
+.Selection {
+	/* background-color: green; */
+	justify-content: space-between;
+	width: 100%;
+	display: flex;
+}
+
+.Selection .Content {
+	width: 70%;
+	display: block;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.Selection .Content .ProductList {
+	width: 100%;
+	display: flex;
+	padding: 0;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/* background-color: yellow; */
+}
+
+.Selection .Surround {
+	width: 15%;
+	height: 100px;
+	margin: 0;
+	/* background-color: red; */
+}
+
+@media (max-width: 1000px) {
+	.Selection .Content {
+		width: 90%;
+	}
+	.Selection .Surround {
+		width: 5%;
+	}
+}

@@ -25,14 +25,22 @@
 }
 
 .Search {
+	margin: auto;
 	height: 25px;
 }
 
 .Profile {
+	margin: auto;
 	height: 25px;
 }
 
 .Cart {
+	margin: auto;
+	height: 25px;
+}
+
+.OpenMenu {
+	margin: auto;
 	height: 25px;
 }
 

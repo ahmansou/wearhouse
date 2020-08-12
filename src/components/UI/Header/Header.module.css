@@ -54,16 +54,33 @@
 }
 
 .Header .RowCart ul{
+	/* background-color: red; */
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	padding: 0 90px;
 }
 
+@media (max-width: 1200px) and (min-width:800px) {
+	.Header .RowCart ul {
+		padding: 0 40px;
+	}
+	.Header .RowMenu ul {
+		padding: 0 40px;
+	}
+}
+
 .Header .RowCart ul li{
+	/* background-color: green; */
 	transition: .2s ease-out;
 }
 .Header .RowCart ul li:hover{
 	margin-bottom: 10px;
 	border-bottom: black 1px solid;
+}
+
+@media (max-width: 800px) {
+	.Header {
+		display: none;
+	}
 }

@@ -1,6 +1,43 @@
 .BestForCard {
+	margin: 10px 0;
+	box-sizing: border-box;
+	padding: 0;
+	width: 32%;
+	text-align: center;
+	border: solid 1px rgba(0, 0, 0, .1);
+	overflow: hidden;
+}
+
+@media (max-width: 800px) {
+	.BestForCard {
+		width: 100%;
+	}
+}
+
+.BestForCard:hover {
+	cursor: pointer;
+}
+
+.BestForCard h2 {
+	color: #7d7d7d;
+	transition: .2s ease-out;
+}
+
+.BestForCard p {
+	color: #a3a3a3;
+	transition: .2s ease-out;
+}
+
+
+.BestForCard:hover h2 { color: black; }
+.BestForCard:hover p { color: black; }
+
+.BestForCard:hover img {
+	filter: grayscale(0%);
+	transition: .2s ease-out;
+}
+
+.BestForCard img {
+	filter: grayscale(80%);
 	width: 100%;
-	background-color: green;
-	display: flex;
-	justify-content: space-around;
 }
