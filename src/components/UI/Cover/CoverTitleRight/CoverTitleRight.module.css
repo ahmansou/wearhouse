@@ -1,0 +1,27 @@
+.CoverTitleRight {
+	margin: auto;
+	padding: 0px;
+	display: flex;
+	/* text-align: left; */
+	justify-content: flex-end;
+	color: white;
+	text-transform: uppercase;
+	/* background-color: green; */
+	width: 100%;
+	text-align: center;
+}
+
+.CoverTitleRight .Text {
+	font-weight: bolder;
+	font-size: 70px;	
+	width: 100%;
+	letter-spacing: -5px;
+	white-space: initial;
+}
+
+.CoverTitleRight .CoverTitleAltern {
+	font-size: 30px;
+	font-weight: 200;
+	text-align: center;
+	letter-spacing: 15px;
+}

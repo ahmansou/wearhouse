@@ -1,0 +1,59 @@
+.Separator {
+	height: 100%;
+	width: 1px;
+	background-color: #333333;
+	margin: 0 10px;
+}
+
+.Logo {
+	margin: auto;
+	/* font-family: sans-serif; */
+	letter-spacing: -2px;
+	font-size: 45px;
+	/* font-size-adjust: 100%; */
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.Logo:hover {
+	cursor: pointer;
+}
+
+.Logo span {
+	font-weight: 200;
+	color: #808080;
+}
+
+.Search {
+	height: 25px;
+}
+
+.Profile {
+	height: 25px;
+}
+
+.Cart {
+	height: 25px;
+}
+
+.Arrows {
+	margin: auto 30px;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	padding: 5px;
+	align-items: center;
+	box-sizing: content-box;
+	background-color: rgba(0, 0, 0, 0.40);
+}
+
+.Arrows:hover {
+	cursor: pointer;
+	background-color: black;
+}
+
+.Arrows img{
+	margin: auto;
+	height: 50%;
+	filter: invert(100%);
+}

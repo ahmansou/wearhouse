@@ -1,0 +1,27 @@
+.TopBar {
+	width: 100%;
+	height: 25px;
+	background-color: black;
+	justify-content: space-between;
+	display: flex;
+	margin: 0;
+	padding: 5px 10px;
+	box-sizing: border-box;
+}
+
+.TopBar ul {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	font-size: 12px;
+	font-weight: lighter;
+	list-style: none;
+	color: #cccccc;
+	vertical-align: middle;
+}
+
+
+.TopBar ul li a:hover {
+	color: white;
+}

@@ -1,0 +1,22 @@
+.CoverTitle {
+	margin: auto;
+	padding: 0px;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	/* background-color: green; */
+}
+
+.CoverTitle .Text {
+	font-weight: bolder;
+	font-size: 70px;	
+	width: 100%;
+	letter-spacing: -5px;
+	white-space: initial;
+}
+
+.CoverTitle .CoverTitleAltern {
+	font-size: 30px;
+	font-weight: lighter;
+	letter-spacing: 15px;
+}

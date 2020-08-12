@@ -1,0 +1,69 @@
+.Header {
+	height: 90px;
+	width: 100%;
+	/* background-color: red; */
+	justify-content: space-between;
+	display: flex;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.Header .RowLogo {
+	/* background-color: salmon; */
+	display: flex;
+	/* justify-content: flex-start; */
+	width: 25%;
+	/* flex: 1; */
+}
+
+.Header .RowMenu {
+	display: flex;
+	/* background-color: seagreen; */
+	width: 50%;
+	/* flex: 3; */
+}
+
+.Header .RowMenu ul {
+	text-transform: uppercase;
+	font-weight: 600;
+	/* font-weight: bold; */
+	height: 100%;
+	margin: auto;
+	padding: 0 100px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.Header .RowMenu ul li {
+	height: 100;
+	transition: .2s ease-out;
+}
+
+.Header .RowMenu ul li:hover {
+	border-bottom: black 1px solid;
+	margin-bottom: 10px;
+	/* background-color: lightgrey; */
+}
+
+.Header .RowCart {
+	/* background-color: blue; */
+	width: 25%;
+	display: flex;
+	/* flex: 1; */
+}
+
+.Header .RowCart ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 90px;
+}
+
+.Header .RowCart ul li{
+	transition: .2s ease-out;
+}
+.Header .RowCart ul li:hover{
+	margin-bottom: 10px;
+	border-bottom: black 1px solid;
+}

@@ -1,0 +1,33 @@
+.CoverTitleLeft {
+	margin: auto;
+	padding: 0px;
+	display: flex;
+	/* text-align: left; */
+	justify-content: flex-start;
+	color: black;
+	text-transform: uppercase;
+	/* background-color: green; */
+	width: 100%;
+}
+.CoverTitleLeft ul {
+	/* list-style: symbols(+); */
+	list-style-type: '+';
+	justify-content: flex-start;
+	/* float: left; */
+	/* background-color: red; */
+	/* width: 50%; */
+}
+
+.CoverTitleLeft .Text {
+	font-weight: bolder;
+	font-size: 70px;	
+	width: 100%;
+	letter-spacing: -5px;
+	white-space: initial;
+}
+
+.CoverTitleLeft .CoverTitleAltern {
+	font-size: 20px;
+	font-weight: 200;	;
+	letter-spacing: 15px;
+}
