@@ -10,12 +10,12 @@ import './App.css';
 class App extends Component {
   state = {
     products: [
-      {name: 'bag1', price: 199, image: productImg},
-      {name: 'bag2', price: 299, image: productImg},
-      {name: 'bag3', price: 399, image: productImg},
-      {name: 'bag4', price: 499, image: productImg},
-      {name: 'bag5', price: 599, image: productImg},
-      {name: 'bag6', price: 699, image: productImg},
+      {name: 'bag1', price: 199.99, image: productImg},
+      {name: 'bag2', price: 299.99, image: productImg},
+      {name: 'bag3', price: 399.99, image: productImg},
+      {name: 'bag4', price: 499.99, image: productImg},
+      {name: 'bag5', price: 599.99, image: productImg},
+      {name: 'bag6', price: 699.99, image: productImg},
     ]
   }
   render() {

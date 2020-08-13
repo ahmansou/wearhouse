@@ -16,6 +16,7 @@
 	width: 100%;
 	display: flex;
 	padding: 0;
+	margin: 20px auto;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	/* background-color: yellow; */
@@ -35,4 +36,10 @@
 	.Selection .Surround {
 		width: 5%;
 	}
+}
+
+.HSeparator {
+	margin: 20px auto;
+	width: 100px;
+	border-bottom: black 3px solid;
 }

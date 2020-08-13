@@ -7,6 +7,7 @@ const selection = (props) => (
 		<div className={classes.Surround} ></div>
 		<div className={classes.Content} >
 			<h1>Our finest selection</h1>
+			<div className={classes.HSeparator} ></div>
 			<div className={classes.ProductList}>
 				{props.products.map(product => {
 						return <ProductCard 

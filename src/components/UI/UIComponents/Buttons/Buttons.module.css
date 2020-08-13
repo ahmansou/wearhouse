@@ -44,3 +44,43 @@
 	margin: auto;
 	padding: 0;
 }
+
+.AddToCartButton {
+	margin: auto;
+	width: fit-content;
+	/* width: 100px; */
+	height: fit-content;
+	box-sizing: border-box;
+	background-color: white;
+	border: solid 1px black;
+	font-size: 14px;
+	padding: 10px 15px;
+	color: black;
+	display: flex;
+	text-align: center;
+	transition: .2s ease-in-out;
+}
+
+.AddToCartButton:hover {
+	color: white;
+	cursor: pointer;
+	background-color: black;
+}
+
+.AddToCartButton p {
+	margin: auto;
+	padding: 0;
+	/* width: fit-content; */
+}
+
+.AddToCartButton .AddToCartImg {
+	padding: 0;
+	width: 14px;
+	margin: auto;
+	margin-left: 5px;
+	transition: .2s ease-in-out;
+}
+
+.AddToCartButton:hover .AddToCartImg{
+	filter: invert(100%);
+}
