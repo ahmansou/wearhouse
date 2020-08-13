@@ -24,24 +24,9 @@
 	color: #808080;
 }
 
-.Search {
-	margin: auto;
-	height: 25px;
-}
-
-.Profile {
-	margin: auto;
-	height: 25px;
-}
-
-.Cart {
-	margin: auto;
-	height: 25px;
-}
-
 .OpenMenu {
 	margin: auto;
-	height: 25px;
+	font-size: 50px;
 }
 
 .Arrows {
@@ -51,6 +36,7 @@
 	display: flex;
 	padding: 5px;
 	align-items: center;
+	color: white;
 	box-sizing: content-box;
 	background-color: rgba(0, 0, 0, 0.40);
 }
@@ -60,8 +46,49 @@
 	background-color: black;
 }
 
-.Arrows img{
+.Arrows > *{
 	margin: auto;
-	height: 50%;
-	filter: invert(100%);
 }
+
+.OneInputForm {
+	padding: 0;
+	/* display: flex; */
+	/* margin: auto; */
+	/* justify-content: space-around; */
+}
+
+.OneInputForm > * {
+	margin: auto;
+	height: 20px;
+	border: white 1px solid;
+	padding: 0;
+	padding: 10px 10px;
+	box-sizing: content-box;
+	text-align: center;
+	transition: .2 ease-in-out;
+}
+
+.OneInputForm > *:focus {
+		outline: none;
+}
+
+.OneInputForm input {
+	background-color: hsla(0, 0%, 0%, 0.5);
+	padding: 10px 40px;
+	color: white;
+}
+
+@media (max-width: 450px) {
+	.OneInputForm input {
+		padding: 10px 10px;
+	}
+}
+
+.OneInputForm input::placeholder {
+	color: white;
+}
+
+.OneInputForm button {
+	height: 20px;
+	background-color: white;
+}	

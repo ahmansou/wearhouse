@@ -4,6 +4,7 @@ import Layout from './components/Layout/Layout';
 import Cover from './components/UI/Cover/Cover';
 import BestFor from './components/BestFor/BestFor';
 import Selection from './components/Selection/Selection';
+import Coupon from './components/Coupon/Coupon';
 import productImg from './assets/product.jpg';
 import './App.css';
 
@@ -22,14 +23,10 @@ class App extends Component {
     return (
       <Aux>
         <Layout>
-          <Cover />
+          {/* <Cover />
           <BestFor />
-          <Selection products={this.state.products} />
-          {/* <div>cover</div> */}
-          {/* <div>best for</div> */}
-          {/* <div>selection 2:4</div> */}
-
-          <div>coupon</div>
+          <Selection products={this.state.products} /> */}
+          <Coupon amount="5" />
           <div>who we are</div>
           <div>testimonials</div>
           <div>Accordions</div>

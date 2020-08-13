@@ -1,0 +1,52 @@
+.CouponContainer {
+	margin: 25px auto;
+	padding: 30px 0;
+	/* padding-top: 20px;
+	padding-bottom: 20px; */
+	width: 100%;
+	height: fit-content;
+	background-color: red;
+	display: flex;
+	justify-content: space-between;
+}
+
+.CouponContainer  .Surround {
+	width: 15%;
+	height: 100px;
+	margin: 0;
+}
+
+.CouponContainer .Content {
+	width: 70%;
+	padding: 0;
+	background-color: green;
+	text-align: center;
+	display: block;
+	justify-content: space-around;
+	color: white;
+	font-size: 14px;
+}
+
+.CouponContainer .Content .MainText h1{
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 10px;
+	margin: 15px auto;
+	/* padding-top: 40px; */
+}
+
+
+.CouponContainer .Content .Altern{
+	font-size: 12px;
+	font-weight: 100;
+}
+
+@media (max-width: 466px) {
+	.CouponContainer  .Surround {
+		width: 0%;
+	}
+	.CouponContainer  .Content {
+		width: 100%;
+	}
+}

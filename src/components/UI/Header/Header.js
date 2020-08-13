@@ -1,7 +1,8 @@
 import React from 'react';
 import classes from './Header.module.css';
 import NavItem from '../NavItem/NavItem';
-import {Logo, Search, Profile, Cart} from "../UIComponents/UIComponents";
+import {Logo} from "../UIComponents/UIComponents";
+import { PersonOutline, Search, ShoppingCart} from '@material-ui/icons';
 
 const header = (props) => (
 	<header className={classes.Header} >
@@ -20,8 +21,8 @@ const header = (props) => (
 		<div className={classes.RowCart} >
 			<ul>
 				<NavItem><Search /></NavItem>
-				<NavItem><Profile /></NavItem>
-				<NavItem><Cart /></NavItem>
+				<NavItem><PersonOutline /></NavItem>
+				<NavItem><ShoppingCart /></NavItem>
 			</ul>
 		</div>
 	</header>

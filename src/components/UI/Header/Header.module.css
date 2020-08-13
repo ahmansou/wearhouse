@@ -43,18 +43,14 @@
 .Header .RowMenu ul li:hover {
 	border-bottom: black 1px solid;
 	margin-bottom: 10px;
-	/* background-color: lightgrey; */
 }
 
 .Header .RowCart {
-	/* background-color: blue; */
 	width: 25%;
 	display: flex;
-	/* flex: 1; */
 }
 
 .Header .RowCart ul{
-	/* background-color: red; */
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -83,4 +79,8 @@
 	.Header {
 		display: none;
 	}
+}
+
+.Header .RowCart > *{
+	/* font-size: 25px; */
 }

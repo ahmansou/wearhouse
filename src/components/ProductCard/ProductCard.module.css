@@ -22,6 +22,12 @@
 	}
 }
 
+@media (max-width: 466px) {
+	.ProductCard {
+		width: 100%;
+	}
+}
+
 .ProductCard .Image {
 	width: 100%;
 }
@@ -54,6 +60,13 @@
 	height: 40px;
 }
 
-.ProductCard .Option p{
+.ProductCard .Option > *{
 	margin: auto;
+	color: hsla(0, 0%, 60%, 1);
+	transition: ease-in-out .1s;
 }
+
+.ProductCard .Option > *:hover{
+	color: black;
+}
+

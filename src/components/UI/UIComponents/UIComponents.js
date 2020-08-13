@@ -1,11 +1,6 @@
 import React from 'react';
 import classes from './UIComponents.module.css';
-import SearchIcon from '../../../assets/search.svg';
-import ProfileIcon from '../../../assets/profile.svg';
-import CartIcon from '../../../assets/cart.svg';
-import OpenMenuIcon from '../../../assets/openMenu.svg';
-import rightArrow from '../../../assets/rightArrow.svg';
-import leftArrow from '../../../assets/leftArrow.svg';
+import { Menu, NavigateNext, NavigateBefore } from '@material-ui/icons';
 
 export const Separator = () => (
 	<div className={classes.Separator} ></div>
@@ -15,27 +10,15 @@ export const Logo = () => (
 	<p className={classes.Logo} >WEAR<span>house</span></p>
 )
 
-export const Search = () => (
-	<img className={classes.Search} src={SearchIcon} alt='' />
-)
-
-export const Profile = () => (
-	<img className={classes.Profile} src={ProfileIcon} alt='' />
-)
-
-export const Cart = () => (
-	<img className={classes.Cart} src={CartIcon} alt='' />
-)
-
 export const OpenMenu = () => (
-	<img className={classes.OpenMenu} src={OpenMenuIcon} alt='' />
+	<Menu className={classes.OpenMenu} />
 )
 
 export const RightArrow = (props) => (
 	<div 
 		className={classes.Arrows} 
 		onClick={() => props.coverImageHandler(2)} >
-		<img className={classes.Cart} src={rightArrow} alt='' />
+		<NavigateNext />
 	</div>
 )
 
@@ -43,7 +26,13 @@ export const LeftArrow = (props) => (
 	<div 
 		className={classes.Arrows} 
 		onClick={() => props.coverImageHandler(1)} >
-		<img className={classes.Cart} src={leftArrow} alt='' />
+		<NavigateBefore />
 	</div>
 )
 
+export const OneInputForm = (props) => (
+	<form className={classes.OneInputForm} >
+		<input placeholder={props.placeholder} />
+		<button>{props.buttonTexts}</button>
+	</form>
+)

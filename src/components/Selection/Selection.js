@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Selection.module.css';
 import ProductCard from '../ProductCard/ProductCard';
+import {BlackButton} from '../UI/UIComponents/Buttons/Buttons';
 
 const selection = (props) => (
 	<div className={classes.Selection} >
@@ -10,13 +11,14 @@ const selection = (props) => (
 			<div className={classes.HSeparator} ></div>
 			<div className={classes.ProductList}>
 				{props.products.map(product => {
-						return <ProductCard 
-						name={product.name}
-						price={product.price}
-						image={product.image}
-						/>
-					})}
+					return <ProductCard 
+					name={product.name}
+					price={product.price}
+					image={product.image}
+					/>
+				})}
 			</div>
+			<BlackButton>Show More Products</BlackButton>
 		</div>
 		<div className={classes.Surround} ></div>
 	</div>
