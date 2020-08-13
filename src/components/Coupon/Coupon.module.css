@@ -5,7 +5,7 @@
 	padding-bottom: 20px; */
 	width: 100%;
 	height: fit-content;
-	background-color: red;
+	/* background-color: red; */
 	display: flex;
 	justify-content: space-between;
 }
@@ -19,7 +19,7 @@
 .CouponContainer .Content {
 	width: 70%;
 	padding: 0;
-	background-color: green;
+	/* background-color: green; */
 	text-align: center;
 	display: block;
 	justify-content: space-around;

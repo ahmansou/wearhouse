@@ -1,9 +1,12 @@
 import React from 'react';
 import classes from './Coupon.module.css';
 import {OneInputForm} from '../UI/UIComponents/UIComponents';
+import Cover from '../../assets/covers/store2.jpg'
 
 const coupon = (props) => (
-	<div className={classes.CouponContainer} >
+	<div className={classes.CouponContainer} 
+	style={{backgroundImage: `url(${Cover})`}}
+		>
 		<div className={classes.Surround} ></div>
 		<div className={classes.Content} >
 			<div className={classes.MainText} >

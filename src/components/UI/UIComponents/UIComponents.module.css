@@ -78,17 +78,31 @@
 	color: white;
 }
 
-@media (max-width: 450px) {
-	.OneInputForm input {
-		padding: 10px 10px;
-	}
-}
-
 .OneInputForm input::placeholder {
 	color: white;
 }
 
 .OneInputForm button {
 	height: 20px;
+	padding: 10px 40px;
 	background-color: white;
-}	
+}
+
+.OneInputForm button:hover {
+	cursor: pointer;
+	/* background-color: black; */
+	/* color: white; */
+	/* border-left-color: black; */
+}
+
+@media (max-width: 450px) {
+	.OneInputForm input {
+		padding: 10px 10px;
+	}
+}
+
+@media (max-width: 530px) {
+	.OneInputForm button {
+		padding: 10px 10px;
+	}
+}

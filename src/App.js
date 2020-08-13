@@ -23,9 +23,9 @@ class App extends Component {
     return (
       <Aux>
         <Layout>
-          {/* <Cover />
+          <Cover />
           <BestFor />
-          <Selection products={this.state.products} /> */}
+          <Selection products={this.state.products} />
           <Coupon amount="5" />
           <div>who we are</div>
           <div>testimonials</div>
