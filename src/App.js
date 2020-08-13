@@ -17,8 +17,15 @@ class App extends Component {
       {name: 'bag4', price: 499.99, image: productImg},
       {name: 'bag5', price: 599.99, image: productImg},
       {name: 'bag6', price: 699.99, image: productImg},
-    ]
+    ],
+    // showDrawer: false,
   }
+
+  // drawerHandler = () => {
+  //   let drawerUpdated = this.state.showDrawer;
+  //   this.setState({showDrawer: !drawerUpdated});
+  // }
+
   render() {
     return (
       <Aux>

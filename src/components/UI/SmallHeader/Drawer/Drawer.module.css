@@ -1,0 +1,25 @@
+.Drawer {
+	width: 70%;
+	height: 100%;
+	position: fixed;
+	z-index: 99999;
+	background-color: red;
+	transition: transform .3s ease-out;
+	transition:  .3s ease-out;
+	overflow: hidden;
+}
+
+.Open {
+	transform: translateX(0);
+}
+
+.Close {
+	transform: translateX(-100%);
+	width: 0px;
+}
+
+@media (min-width: 800px) {
+	.Drawer {
+		display: none;
+	}
+}

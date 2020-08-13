@@ -1,7 +1,15 @@
-.Header {
+.HeaderH{
 	height: 90px;
 	width: 100%;
-	/* background-color: red; */
+	/* position: relative; */
+}
+.Header {
+	/* position: fixed; */
+	/* margin-bottom: 90px; */
+	height: 90px;
+	width: 100%;
+	z-index: 900;
+	background-color: white;
 	justify-content: space-between;
 	display: flex;
 	margin: 0;
@@ -9,6 +17,7 @@
 }
 
 .Header .RowLogo {
+	/* position: fixed; */
 	/* background-color: salmon; */
 	display: flex;
 	/* justify-content: flex-start; */
@@ -76,6 +85,9 @@
 }
 
 @media (max-width: 800px) {
+	.HeaderH {
+		display: none;
+	}
 	.Header {
 		display: none;
 	}

@@ -1,6 +1,15 @@
+.SmallHeaderH{
+	height: 80px;
+	width: 100%;
+	display: none;
+}
+
 .SmallHeader {
 	height: 80px;
 	width: 100%;
+	background-color: white;
+	z-index: 900;
+	/* position: fixed; */
 	justify-content: space-between;
 	display: none;
 	margin: 0;
@@ -29,6 +38,9 @@
 
 
 @media (max-width: 800px) {
+	.SmallHeaderH {
+		display: block;
+	}
 	.SmallHeader {
 		display: flex;
 	}
