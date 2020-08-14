@@ -1,7 +1,8 @@
 import React from 'react';
 import classes from './SmallHeader.module.css';
 import {Logo, OpenMenu} from "../UIComponents/UIComponents";
-// import Drawer from './Drawer/Drawer';
+import { PersonOutline, Search, ShoppingCart} from '@material-ui/icons';
+import NavItem from '../NavItem/NavItem';
 
 const smallHeader = (props) => (
 	<header className={classes.SmallHeaderH} >
@@ -11,7 +12,7 @@ const smallHeader = (props) => (
 			</div>
 			<div className={classes.RowCart} >
 				<div className={classes.RowCart} onClick={props.drawerHandler}>
-					<OpenMenu />
+					<NavItem><OpenMenu /></NavItem>
 				</div>
 			</div>
 		</div>
