@@ -34,10 +34,6 @@ class App extends Component {
           <BestFor />
           <Selection products={this.state.products} />
           <Coupon amount="5" />
-          <div>who we are</div>
-          <div>testimonials</div>
-          <div>Accordions</div>
-          <div>newsletter</div>
         </Layout>
       </Aux>
     )

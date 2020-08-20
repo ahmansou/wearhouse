@@ -1,0 +1,31 @@
+.FooterMenu {
+	width: 24%;
+	text-align: left;
+}
+
+.FooterMenu h3 {
+	width: 95%;
+	/* background-color: red; */
+	padding-bottom: 5px;
+	font-size: 16px;
+	font-weight: 400;
+	border-bottom: solid white 1px;
+}
+
+.FooterMenu .Link{
+	color: hsla(0, 0%, 70%, 1);
+	font-size: 14px;
+	list-style-type: '+  ';
+}
+
+.FooterMenu .Link:hover{
+	list-style-type: '+ ';
+	color: white;
+	cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+	.FooterMenu {
+		width: 50%;
+	}
+}

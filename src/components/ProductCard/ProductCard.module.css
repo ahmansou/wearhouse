@@ -37,6 +37,7 @@
 	color: rgba(0, 0, 0, 50%);
 }
 
+.ProductCard .Price:before { content:"USD "; }
 .ProductCard .Price {
 	margin: 10px auto;
 	color: hsla(0, 100%, 30%, 1);
