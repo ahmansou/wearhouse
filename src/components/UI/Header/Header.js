@@ -37,6 +37,7 @@ const header = (props) => (
 				removeFromCart={props.removeFromCart}
 				calculTotalCartPrice={props.calculTotalCartPrice}
 				totalCartPrice={props.totalCartPrice}
+				cartQuantityHandler={props.cartQuantityHandler}
 				 /> 
 				 {/* : null } */}
 		</div>

@@ -42,7 +42,7 @@ class App extends Component {
 
   addToCart = (product, quantity) => {
     if (quantity <= product.stock) {
-      const index = this.checkIfExistIncart(product)
+      const index = this.checkIfExistIncart(product);
       console.log('return', index)
       if (index > -1) {
         let cartUpdated = [...this.state.cart];
@@ -73,12 +73,34 @@ class App extends Component {
     
   }
 
+  cartQuantityHandler = (product, direction) => {
+    const index = this.checkIfExistIncart(product);
+    let cartUpdated = [...this.state.cart];
+    const prd = {...cartUpdated[index]};
+    if (direction === 1) {
+      prd.qnt += 1;
+      cartUpdated[index] = prd;
+      this.setState({cart: cartUpdated})
+    }
+    else if (direction === 0) {
+      if (prd.qnt - 1>= 0) {
+        prd.qnt -= 1;
+        cartUpdated[index] = prd
+        this.setState({cart: cartUpdated})
+      }
+      else
+        return ;
+    }
+  }
+
+
   render() {
     return (
       <Aux>
         <Layout 
           cart={this.state.cart} 
           removeFromCart={this.removeFromCart}
+          cartQuantityHandler={this.cartQuantityHandler}
           calculTotalCartPrice={this.calculTotalCartPrice}
           totalCartPrice={this.state.totalCartPrice} >
           {/* <div onClick={() => this.addToCart(this.state.products[0], 3)} >dada</div>

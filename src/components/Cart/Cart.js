@@ -23,6 +23,7 @@ const cartModal = (props) =>{
 				props.cart.map((product, index) =>{
 					return <CartItem 
 						cartItem={product}
+						cartQuantityHandler={props.cartQuantityHandler}
 						removeFromCart={props.removeFromCart} />
 				}) 
 				: <p>Please add products to your cart</p> }

@@ -44,6 +44,7 @@ class Layout extends Component {
 					removeFromCart={this.props.removeFromCart}
 					calculTotalCartPrice={this.props.calculTotalCartPrice}
 					totalCartPrice={this.props.totalCartPrice}
+					cartQuantityHandler={this.props.cartQuantityHandler}
 					cart={this.props.cart} 
 					cartHandler={this.cartHandler}
 					showCart={this.state.showCart} />
