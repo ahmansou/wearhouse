@@ -1,14 +1,18 @@
 .BackDrop {
-	background-color: hsla(0, 0%, 0%, 0.50);
+	background-color: hsla(0, 0%, 0%, 0.20);
+	/* background-color: red; */
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	z-index: 8000;
+	z-index: 99998;
+	margin: auto;
+	left: 0;
+	top: 0;
 	transition: ease-in-out 1s;
 }
 
-@media (min-width: 800px) {
+/* @media (max-width: 800px) {
 	.BackDrop {
-		display: none;
+		background-color: hsla(0, 0%, 0%, 0.50);
 	}
-}
+} */

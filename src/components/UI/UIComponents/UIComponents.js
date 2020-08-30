@@ -36,3 +36,9 @@ export const OneInputForm = (props) => (
 		<button>{props.buttonTexts}</button>
 	</form>
 )
+
+export const OutStock = () => (
+	<div className={classes.OutStock} ><p>Out of stock</p></div>
+)
+
+// export const QuantityInput = () => ()

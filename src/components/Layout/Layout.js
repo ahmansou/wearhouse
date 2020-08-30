@@ -12,6 +12,7 @@ class Layout extends Component {
 	state = {
 		showDrawer: false,
 		showCategories: false,
+		showCart : true,
 	}
 
 	drawerHandler = () => {
@@ -23,6 +24,11 @@ class Layout extends Component {
 		let categoriesUpdated = this.state.showCategories;
 		this.setState({showCategories: !categoriesUpdated});
 	}
+
+	cartHandler = () => {
+		let showCartUpdated = this.state.showCart;
+		this.setState({showCart: !showCartUpdated});
+	  }
 	
 	render() {
 		return (
@@ -34,12 +40,19 @@ class Layout extends Component {
 				/>
 				{this.state.showDrawer ? <BackDrop drawerHandler={this.drawerHandler} /> : null}
 				<TopBar />
-				<Header />
+				<Header 
+					removeFromCart={this.props.removeFromCart}
+					calculTotalCartPrice={this.props.calculTotalCartPrice}
+					totalCartPrice={this.props.totalCartPrice}
+					cart={this.props.cart} 
+					cartHandler={this.cartHandler}
+					showCart={this.state.showCart} />
 				<SmallHeader drawerHandler={this.drawerHandler} />
 				<main className={classes.Content} >
 					{this.props.children}
 				</main>
 				<Footer />
+				{/* <div className={classes.FooterCont} ></div> */}
 			</Aux>
 		)
 	}

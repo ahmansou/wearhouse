@@ -12,6 +12,12 @@
 	border-bottom: solid white 1px;
 }
 
+.FooterMenu ul{
+	padding-left: 20px;
+	/* background-color: red; */
+}
+
+
 .FooterMenu .Link{
 	color: hsla(0, 0%, 70%, 1);
 	font-size: 14px;
@@ -28,4 +34,29 @@
 	.FooterMenu {
 		width: 50%;
 	}
+}
+
+.SocialMenu {
+	display: flex;
+	margin: 15px auto;
+}
+
+.SocialMenu ul{
+	margin: auto;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	list-style: none;
+
+}
+
+.SocialMenu ul li{
+	margin: auto 10px;
+	color: hsla(0, 0%, 70%, 1);
+	transition: ease-in-out .2s;
+}
+
+.SocialMenu ul li:hover{
+	cursor: pointer;
+	color: hsla(0, 0%, 90%, 1);
 }

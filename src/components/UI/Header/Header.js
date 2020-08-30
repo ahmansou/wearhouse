@@ -2,6 +2,8 @@ import React from 'react';
 import classes from './Header.module.css';
 import NavItem from '../NavItem/NavItem';
 import {Logo} from "../UIComponents/UIComponents";
+import CartModal from '../../Cart/Cart';
+import BackDrop from '../BackDrop/BackDrop';
 import { PersonOutline, Search, ShoppingCart} from '@material-ui/icons';
 
 const header = (props) => (
@@ -23,10 +25,20 @@ const header = (props) => (
 				<ul>
 					<NavItem><Search /></NavItem>
 					<NavItem><PersonOutline /></NavItem>
-					<NavItem><ShoppingCart /></NavItem>
+					<NavItem cartHandler={props.cartHandler} ><ShoppingCart /></NavItem>
 				</ul>
 			</div>
-
+			{props.showCart ? <BackDrop drawerHandler={props.cartHandler} /> : null}
+			{/* {props.showCart ?  */}
+			<CartModal 
+				cart={props.cart} 
+				cartHandler={props.cartHandler}
+				showCart={props.showCart}
+				removeFromCart={props.removeFromCart}
+				calculTotalCartPrice={props.calculTotalCartPrice}
+				totalCartPrice={props.totalCartPrice}
+				 /> 
+				 {/* : null } */}
 		</div>
 	</header>
 )

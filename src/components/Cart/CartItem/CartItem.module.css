@@ -1,0 +1,54 @@
+.CartItem {
+	width: 100%;
+	height: 150px;
+	background-color: white;
+	border-bottom: solid 1px hsla(0, 0%, 0%, .1);
+	margin-bottom: 15px;
+	display: flex;
+	flex-flow: row;
+}
+
+.CartItem .Image {
+	width: 35%;
+	height: 100%;
+	background-size: cover;
+}
+
+.CartItem .Content {
+	padding: 15px;
+	width: 55%;
+	/* background-color: yellow; */
+	box-sizing: border-box;
+}
+
+
+.CartItem .Content p {
+	/* background-color: blue; */
+	margin: auto;
+	font-size: 15px;
+}
+
+.CartItem .Content p span{
+	font-size: 12px;
+	font-weight: 200;
+}
+
+.CartItem .Close {
+	width: 20px;
+	height: 20px;
+	/* margin: 0; */
+	padding: 5px;
+	transition: .2s ease-in-out;
+	/* background-color: black; */
+}
+
+.CartItem .Close:hover {
+	color: hsla(0, 0%, 25%, 1);
+	cursor: pointer;
+}
+
+.CartItem .Close *{
+	/* color: white; */
+	width: 100%;
+	height: 100%;
+}

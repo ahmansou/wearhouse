@@ -7,7 +7,7 @@
 	font-size-adjust: 100%;
 	justify-content: space-between;
 	background-size: cover;
-	z-index: 8000;
+	z-index: 99997;
 }
 
 @media (max-width: 800px) {

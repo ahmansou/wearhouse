@@ -20,7 +20,8 @@ export const BlackButton = (props) => (
 
 export const AddToCartButton = (props) => (
 	<div 
-		className={classes.AddToCartButton} >
+		className={classes.AddToCartButton}
+		onClick={props.addToCart} >
 			<p>{props.children}</p>
 			<ShoppingCart />
 	</div>

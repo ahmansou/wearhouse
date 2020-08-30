@@ -1,7 +1,8 @@
 import React from 'react';
 import classes from './Footer.module.css';
 import {Logo} from '../UIComponents/UIComponents';
-import FooterMenu from './FooterMenus/FooterMenus';
+import {FooterMenu, SocialMenu} from './FooterMenus/FooterMenus';
+// import Aux from '../../../hoc/Aux';
 
 const footer = () => {
 	const links = [
@@ -27,10 +28,17 @@ const footer = () => {
 					<div className={classes.Surround} ></div>
 					<div className={classes.Content} >
 						<Logo />
+						<SocialMenu 
+							ig={true}
+							fb={true}
+							pin={true}
+							yt={true}
+							twit={true} />
 					</div>
 					<div className={classes.Surround} ></div>
 				</div>
 			</div>
+			{/* <div className={classes.FooterCont} ></div> */}
 		</footer>
 	)
 }
